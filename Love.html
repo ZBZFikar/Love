@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Surat Cinta</title>
+<style>
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:pink;
+    font-family:Arial;
+}
+
+button{
+    padding:15px 30px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+#surat{
+    display:none;
+    margin-top:20px;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+}
+</style>
+</head>
+<body>
+
+<div align="center">
+    <button onclick="bukaSurat()">💌 Buka Surat Cinta</button>
+
+    <div id="surat">
+        <h2>Untuk Kamu ❤️</h2>
+        <p>
+            Selamat!<br>
+            Kamu baru saja kena prank. 😂
+        </p>
+    </div>
+</div>
+
+<script>
+function bukaSurat(){
+    document.getElementById("surat").style.display="block";
+
+    setTimeout(()=>{
+        alert("WKWKWK! Kena jebakan surat cinta! 🤣");
+    },500);
+}
+</script>
+
+</body>
+</html>
